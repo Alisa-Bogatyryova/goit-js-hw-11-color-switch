@@ -24,10 +24,9 @@ const switchColors = {
 
     this.intervalId = setInterval(() => {
       const currentIndex = randomIntegerFromInterval(0, colors.length - 1);
-      colors.map((el, ind) => {
-        if (currentIndex === ind) {
-          document.body.style.backgroundColor = el;
-          // console.log(el);
+      colors.map((element, index) => {
+        if (currentIndex === index) {
+          document.body.style.backgroundColor = element;
         }
       });
     }, 1000);
